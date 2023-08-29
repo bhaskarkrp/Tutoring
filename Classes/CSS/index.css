@@ -1,0 +1,79 @@
+/* css -> cascading style sheet */
+
+/* three ways
+    external css => always prefer this | maintainbility, code readable
+    internal css => when task is small
+    inline css => override properties
+
+    priority -> inline css > internal css > external css
+
+    priority (class, id, tag) -> id > class > tag 
+
+syntax css
+    slector { property: value} 
+
+combinators -> A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator.
+    four ways
+        1. desendant selectors (div h1{})
+        2. child selectors
+        3. Adjacent selectors
+        4. Global sibling selectors
+    
+*/
+
+/* Adjacent */
+div + p {
+  /*  first p inside div*/
+  font-weight: bold;
+  color: aqua;
+  font-size: 2rem;
+}
+/* desendant */
+div h1 {
+  /* propety apply */
+}
+/* child */
+div > h1 {
+  /*  all h1 inside div */
+}
+/* Global */
+div ~ h1 {
+  /* all h1 that are next sibling of div */
+}
+
+div {
+  font-size: xx-large;
+}
+
+#h1-heading {
+  font-weight: bold;
+  color: yellow;
+}
+
+h1 {
+  color: aqua;
+}
+
+.h3-class {
+  color: blue;
+}
+
+.table-container {
+  border: 1px solid brown;
+}
+
+.table-heading {
+  background-color: aqua;
+  border: 1px solid rgb(205, 15, 15);
+}
+
+.container-class {
+  border: 1px solid gray;
+  display: flex;
+  gap: 10px; 
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+/* flex | grid | rem | px | % */

@@ -12,14 +12,22 @@
 <html> <!-- HTMl start here -->
         <head>
             <title>First HTML Page</title>
+            <link rel="stylesheet" href="../CSS/index.css">
             <!-- SEO, link CSS  -->
         </head>
+        <style>
+            div{
+                border-radius: 30%;
+            }
+        </style>
         <body>
             <div>
-                <h1>I am a heading</h1>
-                <h3>I am a heading 3 </h3>
+                <h1 id="h1-heading">I am a heading</h1>
+                <p style="font-size: 5rem;">I am a paragraph -1</p>
+                <h3 class="h3-class">I am a heading 3 </h3>
                 <h5>I am a heading 5</h5>
                 <h6>I am a heading 6</h6>
+                <h1 id="h1-heading">I am a heading</h1>
                 <p>I am a paragraph</p>
             </div>
 
@@ -48,8 +56,8 @@
                 <!-- Tables -->
                 <!-- heading1 | heading2 | heading3 | heading4
                     data1    | data2    | data3    | data4 -->
-                <table>
-                    <tr>
+                <table class="table-container">
+                    <tr class="table-heading">
                         <th>Food</th>
                         <th>City</th>
                         <th>Pin code</th>
