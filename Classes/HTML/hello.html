@@ -15,15 +15,15 @@
             <link rel="stylesheet" href="../CSS/index.css">
             <!-- SEO, link CSS  -->
         </head>
-        <style>
+        <!-- <style>
             div{
-                border-radius: 30%;
+                /* border-radius: 30%; */
             }
-        </style>
+        </style> -->
         <body>
             <div>
                 <h1 id="h1-heading">I am a heading</h1>
-                <p style="font-size: 5rem;">I am a paragraph -1</p>
+                <p class="para">I am a paragraph -1</p>
                 <h3 class="h3-class">I am a heading 3 </h3>
                 <h5>I am a heading 5</h5>
                 <h6>I am a heading 6</h6>
@@ -31,22 +31,26 @@
                 <p>I am a paragraph</p>
             </div>
 
-            <div>
-                <a href="https://google.com" target="_blank">Google</a>
+            <button class="first-button">Click Me</button>
+
+            <br>
+
+            <div style="position: sticky; top: 0; left: 10px;">
+                <s href="https://google.com" target="_blank">Google</a>
 
                 <br>
 
-                <a href="https://portfolio-bhaskarkrp.vercel.app/" target="_blank">My website</a>
+              <a href="https://portfolio-bhaskarkrp.vercel.app/" target="_blank">My website</a>
             </div>
 
-            <div>
+            <div style="position: relative; border: 1px solid black;">
                 <!-- list -> ordered list and unordered list -->
-                <ol>
+                <ol class="ordered-list">
                     <li>Bhaskar</li>
                     <li>Kartik</li>
                 </ol>
 
-                <ul>
+                <ul class="unordered-list">
                     <li>Bhaskar</li>
                     <li>Kartik</li>
                 </ul>
@@ -113,12 +117,29 @@
             <div class="container-class" id="form-div-id">
                 <!-- Form -->
                 <form action="">
-                    <input type="text" name="name" id="" placeholder="Enter your name">
-                    <input type="text" name="" id="" placeholder="Enter your question">
-                    <input type="number" name="" id="" placeholder="Enter your mobile number">
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                    <input type="text" name="" id="question" placeholder="Enter your question">
+                    <!-- <p id="warning" style="display: none; font-size: 15px;">Hi</p> -->
+                    <input type="number" name="" id="phone" placeholder="Enter your mobile number">
 
                     <input type="submit" value="Hit submit" name="" id="">
                 </form>
             </div>
         </body>
+
+        <script src="../JS/index.js"></script>
+
+<!-- <script >
+    In file JS
+</script> -->
+
+
 </html>
+
+
+
+<!--
+    Dom - Docoment Object Model 
+    Dom Manipulation -> change in DOM 
+    How can we achieve this? Via methods
+ -->
