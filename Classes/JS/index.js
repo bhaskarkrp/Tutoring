@@ -19,6 +19,23 @@
 //
 // var, let, const
 
+{/* <script> */}
+(function(d,t) {
+  var BASE_URL="http://localhost:3000";
+  var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=BASE_URL+"/packs/js/sdk.js";
+  g.defer = true;
+  g.async = true;
+  s.parentNode.insertBefore(g,s);
+  g.onload=function(){
+    window.chatwootSDK.run({
+      websiteToken: 'jMXTvAwmWfSqRDjqremFP656',
+      baseUrl: BASE_URL
+    })
+  }
+})(document,"script");
+// </script>
+
 var form_tag = document.querySelector("form");
 
 form_tag.addEventListener("submit", printData);
