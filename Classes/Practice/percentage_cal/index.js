@@ -36,4 +36,6 @@ function calculatePercentage() {
 
 
   percentage = ((mathMarks + englishMarks + physicsMarks) / 3 ) * 100;
+
+  
 }
