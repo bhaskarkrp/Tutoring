@@ -70,10 +70,58 @@ h1 {
 .container-class {
   border: 1px solid gray;
   display: flex;
-  gap: 10px; 
+  gap: 10px;
   flex-wrap: wrap;
   text-align: center;
   justify-content: center;
+  margin: 10px 6px 11px 7px;
+  padding: 10px 6px;
+}
+
+.ordered-list {
+  position: relative;
+  left: 110px;
+  /* top: 10px; */
+}
+
+.unordered-list {
+  position: absolute;
+  top: 0px;
+  left: 411px;
+}
+
+.para {
+  font-size: 5rem;
+  color: aqua;
+}
+
+@media screen and (max-width: 768px) and (min-width: 400px) {
+  .para {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .para {
+    font-size: 50px;
+    color: blueviolet;
+  }
 }
 
 /* flex | grid | rem | px | % */
+
+/* 
+Box Model -> Margin, Padding, Design Layout
+
+Position -> five types ->
+
+1. Static (default)
+2. Relative - Decide positioning from the default position
+3. Absolute - Decide positioning from their ancestor
+4. Fixed - Fix the position
+5. Sticky - 
+
+top, bottom, left, right
+
+Responsiveness - Media Query  
+*/

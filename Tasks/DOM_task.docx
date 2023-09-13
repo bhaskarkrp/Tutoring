@@ -1,0 +1,88 @@
+1. Task-1 DOM-I DRIVING AGE CHECK
+    Create an age_check.html file. With an input field (takes the age of the user) and a button You must fill in valid id and other attributes for elements to make the buttons work.
+
+    When the user clicks the button the following must happen:
+
+    1. If the user is older than 18 print You can drive in India! in the p tag.
+    2. If the user is younger than 18 print You can't drive in India in the p tag.
+    3. If the user is exactly 18 years old print You are just old enough to drive in India! in the p tag.
+
+
+2. Task - 2 DOM-I INPUT VALUES
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Values</title>
+    </head>
+    <body>
+        <input type="text" name="name" id="name">
+        <select id="gender">
+            <option value="">--</option>
+            <option value="male">M</option>
+            <option value="female">F</option>
+        </select>
+        <input type="text" name="email" id="email">
+        <input type="text" name="mobile" id="mobile">
+        <hr>
+        <button onclick="showName()">NAME</button>
+        <button onclick="showGender()">GENDER</button>
+        <button onclick="showEmail()">EMAIL</button>
+        <button onclick="showMobile()">MOBILE</button>
+    </body>
+    <script type="text/javascript">
+        function showName() {
+            // Show the alert of the filled name
+        }
+
+        function showGender() {
+            // Show the alert of the selected Gender
+        }
+
+        function showEmail() {
+            // Show the alert of the filled email
+        }
+
+        function showMobile() {
+            // Show the alert of the filled mobile
+        }
+    </script>
+    </html>
+    Complete all the functions by creating a copy of the above template with the file name values.html
+
+
+3.Task -3  DOM-I CONTENT MANIPULATION
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Content Manipulation</title>
+    </head>
+    <body>
+        <h1 id="firstname">Hello</h1>
+        <div id="lastname">MASAI</div>
+        <p id="fullname">School</p>
+        <hr/>
+        <button onclick="setFirstName()">FIRSTNAME</button>
+        <button onclick="setLastName()">LASTNAME</button>
+        <button onclick="setFullName()">FIRSTNAME NAME</button>
+        <button onclick="resetDefaults()">RESET DEFAULTS</button>
+    </body>
+    <script type="text/javascript">
+        function setFirstName() {
+            // Change the content of h1 to your first name
+        }
+
+        function setLastName() {
+            // Change the content of div to your last name
+        }
+
+        function setFullName() {
+            // Change the content of p to your full name (firstname - lastname)
+        }
+
+        function resetDefaults(){
+            // reset the firstname, lastname, and fullname to empty values
+        }
+    </script>
+    </html>
+
+    Complete all the functions by creating a copy of the above template with the file name content_manipulation.html
