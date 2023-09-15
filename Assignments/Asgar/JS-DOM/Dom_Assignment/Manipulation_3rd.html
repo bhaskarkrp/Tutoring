@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>Content Manipulation</title>
+    </head>
+    <body>
+        <h1 id="firstname">Hello</h1>
+        <div id="lastname">MASAI</div>
+        <p id="fullname">School</p>
+        <hr/>
+        <button onclick="setFirstName()">FIRSTNAME</button>
+        <button onclick="setLastName()">LASTNAME</button>
+        <button onclick="setFullName()">FIRSTNAME NAME</button>
+        <button onclick="resetDefaults()">RESET DEFAULTS</button>
+    </body>
+    <script type="text/javascript">
+        function setFirstName() {
+            // Change the content of h1 to your first name
+            document.getElementById('firstname').innerHTML ="Asgar";
+
+
+        }
+
+        function setLastName() {
+            // Change the content of div to your last name
+             document.getElementById('lastname').innerHTML='Sidd'
+        }
+
+        function setFullName() {
+            // Change the content of p to your full name (firstname - lastname)
+           let first= document.getElementById('firstname').innerHTML="Asgar";
+            let last = document.getElementById('lastname').innerHTML="Sidd";
+            let para = document.getElementById('fullname');
+            para.innerText= first+" "+last+" ";
+            // para.style.border="1px solid black";
+        }
+
+        function resetDefaults(){
+            // reset the firstname, lastname, and fullname to empty values
+           let first= document.getElementById('firstname').innerHTML ="Hello";
+           let last = document.getElementById('lastname').innerHTML='MASAI';
+           let para = document.getElementById('fullname');
+            para.innerText= first+" "+last+" ";
+            let reset = document.getElementById('fullname');
+            reset.innerText = "School";
+            // reset.style.border= '1px solid black';
+        }
+    </script>
+    </html>

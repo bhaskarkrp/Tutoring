@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=utf-8 />
+        <title>JS DOM paragraph style</title>
+    </head> 
+    <body>
+        <p id ='text'>JavaScript Exercises - w3resource</p> 
+        <div>
+        <button id="jsstyle"
+        onclick="js_style()">Style</button>
+        </div>
+    </body>
+    <script>
+        let btn= document.getElementById('jsstyle');
+        btn.addEventListener('click', function(){
+        let text = document.getElementById('text');
+        text.style.fontFamily = 'sans-serif';
+        text.style.fontSize = '1.5rem';
+        text.style.color ='yellow'
+    })
+    </script>
+    
+</html>
