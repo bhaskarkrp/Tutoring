@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Set Paragraph color</title>
+  </head>
+  <body>
+    <p
+      id="para"
+      style="
+        width: 220px;
+        height: 180px;
+        border: 1px solid red;
+        padding: 10px;
+        margin: 50px;
+        border-radius: 10px;
+      "
+    >
+      Hey, I'm Asgar, today iam creating a application for text background color
+      change by selecting feature. By the end i'm using select tag for this and
+      lill bit inline css for border padding border and basic uses after that i
+      will change the color by select as value.
+    </p>
+    <label
+      for="select"
+      style="margin-left: 50px; margin-right: 20px; font-weight: 600"
+      >Select a Color :
+    </label>
+    <select name="" id="select">
+      <option value="yellow">Yellow</option>
+      <option value="coral">Coral</option>
+      <option value="chocolate">Chocolate</option>
+      <option value="cyan">Cyan</option>
+      <option value="Lime">Lime</option>
+      <option value="blue">Blue</option>
+    </select>
+    <script>
+      let selectColor = document.getElementById("select");
+      console.log(selectColor.value);
+      let paraTag = document.getElementById("para");
+      selectColor.addEventListener("change", function () {
+        
+          let getColor = selectColor.value;
+          paraTag.style.backgroundColor = getColor;
+        
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid red;
+            width: 450px;
+            padding: 20px;
+    
+}
+   button{
+    margin-top: 20px;
+    width: 100px;
+    color: rgb(52, 70, 233);
+    background-color: rgb(48, 196, 73);
+   }
+
+   .Chemestry{
+    margin-left: 30px;
+   }
+   h2{
+    color: rgb(37, 122, 122);
+   }

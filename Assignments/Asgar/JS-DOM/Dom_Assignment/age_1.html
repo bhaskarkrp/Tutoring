@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age check</title>
+    <style>
+        .age{
+            height: 250px;
+            width: 400px;
+            background-color: bisque;
+            border: 1px solid green;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: auto;
+            margin-top: 200px;
+            border-radius: 10px;
+        
+        }
+        #input{
+            border-radius: 10px;
+
+            border: 1px dotted red;
+            margin-top: 30px;
+        }
+        #btn{
+            margin-top: 20px;
+            color: brown;
+            background-color: antiquewhite;
+        }
+        h2{
+            margin-top: 55px;
+            font-family: monospace;
+            font-weight: 500;
+            color: rgb(63, 61, 175);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="age">
+        <h2 id="h2_tag">Age check For Drive Application</h2>
+        <input type="number" id="input">
+        <button type="submit" id="btn">Check Here</button>
+        <p id="ageCheck"></p>
+    </div>
+    <script>
+          
+          let btn = document.getElementById('btn');
+          let age = document.getElementById('ageCheck');
+          btn.addEventListener("click", function() {
+            let input = document.getElementById('input');
+          let inputVal = input.value;
+             if(inputVal == 18){
+                age.innerText="You are just old enough to drive in India!";
+                age.style.border= "2px solid red";
+                
+             }else if(inputVal > 18){
+                age.innerText="You can drive in India!";
+                age.style.border= "2px solid red";
+             }else {
+                age.innerText="You can't drive in India";
+                age.style.border= "2px solid red";
+             }
+
+          });
+    </script>
+</body>
+</html>
