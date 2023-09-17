@@ -1,0 +1,25 @@
+<!-- 4. Here is a sample HTML file with a submit button. Write a JavaScript function to get the value of the href, hreflang, rel, target, and type attributes of the specified link. -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <p><a id="w3r" type="text/html" hreflang="en-us" rel="nofollow" target="_self" href="https://www.w3resource.com/">w3resource</a></p>
+    <button onclick="getAttributes()">Click here to get attributes value</button>
+
+    <script>
+        function getAttributes() {
+            var link = document.getElementById("w3r");
+            var hrefValue = link.getAttribute("href");
+            var hreflangValue = link.getAttribute("hreflang");
+            var relValue = link.getAttribute("rel");
+            var targetValue = link.getAttribute("target");
+            var typeValue = link.getAttribute("type");
+            alert("href: " + hrefValue + "\nhreflang: " + hreflangValue + "\nrel: " + relValue + "\ntarget: " + targetValue + "\ntype: " + typeValue);
+        }
+    </script>
+</body>
+</html>

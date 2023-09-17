@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age-Check</title>
+</head>
+
+<body>
+    <div
+        style="height: 400px;width:600px;margin-left: 600px;border: 2px solid rgb(14, 16, 126);background-color: rgb(156, 171, 172);margin-top: 200px;">
+        <div style="margin-left: 150px;">
+            <h1 style="margin-left: 80px;"> Age Check</h1>
+            <div class="age_div">
+                <input type="number" name="age_input" id="ageValue" placeholder="Entering age....."
+                    style="width: 500px; height: 40px;background-color:lemonchiffon;margin-left: -105px;">
+            </div>
+            <div>
+                <button value="Submit" id="agechecker"
+                    style="height: 45px;margin-top:40px;margin-left:90px;color: white;background-color:tomato;width: 150px;font-size: 18px;">Check
+                    Age </button>
+                <p id="output" style="margin-left: 40px;font-size: 18px;"></p>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let btn = document.getElementById("agechecker");
+    btn.addEventListener("click", checkage);
+    function checkage() {
+        let ageCheckElement = document.getElementById("ageValue");
+        let checkage = ageCheckElement.value;
+        let agecheck = Number(checkage);
+        let output = document.getElementById("output");
+        if (checkage == "") {
+            output.innerHTML = "Please enter a valid age.";
+            output.style.color = "red";
+        } else if (checkage == 18) {
+            output.innerHTML = "You are just old enough to drive in India!";
+            output.style.color = "yellow";
+        } else if (checkage > 18) {
+            output.innerHTML = "You can drive in India!";
+            output.style.color = "yellow";
+        } else {
+            output.innerHTML = "You can't drive in India.";
+            output.style.color = "red";
+        }
+    }
+
+</script>
+
+</html>

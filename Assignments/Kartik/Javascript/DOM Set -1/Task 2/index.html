@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perimeter & Area</title>
+   
+</head>
+
+<body>
+    <div class="container" style="border: 2px solid black;height: 500px;width: 540px; margin-left: 580px;margin-top: 10%;background-color:lightgoldenrodyellow;">
+        <h3 style="color: darkcyan;margin-left: 120px;margin-top: 60px;">Length Of Rectangle:</h3>
+        <input type="number" id="lengthId"   placeholder="Enter Length of rectangle" id="Length" style="margin-left: 70px;width: 400px;height:40px;">
+
+        <h3 style="color: darkcyan;margin-left: 120px;">Breadth Of Rectangle:</h3>
+        <input type="number" id="breadthId" placeholder="Enter Breadth of rectangle" id="Breadth" style="margin-left: 70px;width: 400px;height: 40px;">
+        <br><br><br><br>
+        <input type="button" value="Submit" id="chkAreaPeri" style="margin-left: 220px;padding: 10px;background-color: hotpink;border-radius: 5px;width: 100px;">
+
+        <p id="output" style="margin-left: 130px;"> </p>
+    </div>
+   
+</body>
+<script>
+    let btn =document.getElementById("chkAreaPeri");
+    btn.addEventListener("click",calculateAreaPeri);
+    function calculateAreaPeri(){
+         let length = (document.getElementById("lengthId").value);
+            let breadth =(document.getElementById("breadthId").value);
+           
+            if (length && breadth) {
+                let area = length * breadth;
+                let perimeter = 2 * length + 2 * breadth;
+                let PeriArea = document.getElementById("output");
+                PeriArea.innerHTML = "Area Of rectangle is: " + area + "<br>Perimeter Of rectangle is : " + perimeter;
+            } else {
+                let PeriArea =document.getElementById("output");
+                PeriArea.innerHTML= "Please enter valid numbers for length and breadth.";
+                output.style.fontSize="18px";
+                output.style.marginLeft="130px";
+            }
+        }
+    
+</script>
+</html>
+
+
+
+
