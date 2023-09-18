@@ -1,0 +1,20 @@
+1. Given an array of numbers, return the elements that have even index (starting the count at 0) and are even
+Use Higher-order functions
+Sample Input - [2, 4, 5, 3, 6, 8]
+Sample Output - [2, 6]
+
+2. Given an array of strings print the sum of lengths if the characters in the string are odd
+Sample Input - ["A", "Good", "Problem"]
+Sample Output - 8
+
+3. Given an array of string generate an array whose first or last character is a
+Sample Input - ["assignment", "problem", "media", "upload"]
+Sample Output - ["assignment", "media"]
+
+4. Given an array of string generate an array with their first characters
+Sample Input - ["Masai", "School"]
+Sample Output - ["M", "S"]
+
+5. Given an array of strings print the length of each string
+simple Input : ["apple", "windows", "ubuntu"]
+Sample Output : [5, 7, 6]
