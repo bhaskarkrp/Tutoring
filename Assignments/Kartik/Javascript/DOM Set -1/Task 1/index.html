@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percentage</title>
+    
+</head>
+
+<body>  
+
+    <div class="container" id="percent_id" style="height: 600px;width:400px;border: 2px solid black; margin-left: 300px;">
+        <form>
+            <div class="form-group">
+            <h3 style="margin-left: 60px;color: darkcyan;">Marks in Mathematics :</h3>
+            <input type="number" id="maths_marks" placeholder="Entering the Mathematics Marks" style="margin-left: 60px; width: 250px;height: 30px;"/>
+            <p id="maths_warning" style="display: none;color: red;font-size: 12px; margin-left: 70px;">Marks must be less than 100 and greater than 0.</p>
+        </div>
+        <div class="form-group">
+            <h3 style="margin-left: 60px; color:darkcyan;">Marks in Physics :</h3>
+            <input type="number" id="phy_marks" placeholder="Entering the Physics Marks" style="margin-left: 60px; width: 250px;height: 30px;" >
+            <p id="phy_warning" style="display: none;color: red;font-size: 12px;margin-left: 70px;">Marks must be less than 100 and greater than 0.</p>
+        </div>
+        <div class="form-group">
+            <h3 style="margin-left: 60px;color: darkcyan;">Marks in Chemestry :</h3>
+            <input type="number" id="chem_marks" placeholder="Entering the Chemestry Marks" style="margin-left: 60px; width: 250px;height: 30px;" >
+            <p id="chem_warning" style="display: none;color: red;font-size: 12px;margin-left: 70px;">Marks must be less than 100 and greater than 0. </p>
+        </div>  
+            <div>
+                 <input type="button" id="submit_btn" value="Submit" style="margin-left: 160px;margin-top: 25px;color: darkcyan;padding: 10px;width: 90px;">
+                 <p id="percentageshow"></p>
+
+        </div>
+        </form> 
+        </div>
+        <script>
+            let btn = document.getElementById("submit_btn");
+
+btn.addEventListener("click", calculatePercentage);
+let message = "Please Enter Marks";
+
+// function | Method
+function calculatePercentage() {
+ 
+
+  let mathsMarkElement = document.getElementById("maths_marks");
+  let mathsMarks = mathsMarkElement.value;
+  
+  if (mathsMarks=="") {
+    let maths_warning = document.getElementById("maths_warning");
+         maths_warning.innerText = message;
+         maths_warning.style.display = "block";
+  } else {
+    mathsMarks = Number (mathsMarks);
+
+    if (mathsMarks >= 100 || mathsMarks < 0) {
+      maths_warning.style.display = "block";
+      maths_warning.innerText = message;
+    } else {
+      maths_warning.style.display = "none";
+    }
+  }
+ 
+  let phyMarkElement = document.getElementById("phy_marks");
+  let phyMarks = phyMarkElement.value;
+
+  if (phyMarks=="") {
+    let phy_warning = document.getElementById("phy_warning");
+        phy_warning.innerText = message;
+        phy_warning.style.display = "block";
+  } else {
+    phyMarks = Number(phyMarks);
+
+    if (phyMarks >= 100 || phyMarks < 0) {  
+      phy_warning.style.display = "block";
+      phy_warning.innerText = message;
+    } else {
+      phy_warning.style.display = "none";
+    }
+  }
+
+  let chemMarkElement = document.getElementById("chem_marks");
+  let chemMarks = chemMarkElement.value;
+
+  if (chemMarks=="") {
+    let chem_warning = document.getElementById("chem_warning");
+        chem_warning.innerText = message;
+        chem_warning.style.display = "block";
+  } else {
+    chemMarks = Number(chemMarks); 
+
+    if (chemMarks >= 100 || chemMarks < 0) {
+      chem_warning.style.display = "block";
+      chem_warning.innerText = message;
+    } else {
+      chem_warning.style.display = "none";
+    }
+  }
+
+ 
+  let message = "Marks cannot be negative or greater than 100";
+  let percentageshow = document.getElementById("percentageshow");
+
+    if (mathsMarks && phyMarks && chemMarks)
+    {
+        let percentage = ((mathsMarks + phyMarks + chemMarks)/300)*100;
+        percentageshow.innerText ="Percentage is: "+ percentage; 
+        percentageshow.style.display = "block";
+        percentageshow.style.textAlign="center";
+        percentageshow.style.fontSize="25px"
+    }else{
+        percentageshow.style.display ="none"
+    }
+}
+</script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percentage</title>
+</head>
+
+<body>  
+    <div class="container" id="percent_id" style="height: 600px;width:400px;border: 2px solid black; margin-left: 300px;">
+        <form>
+            <div class="form-group">
+                <h3 style="margin-left: 60px;color: darkcyan;">Marks in Math :</h3>
+                <input type="number" id="maths_marks" placeholder="Entering the Maths Marks" style="margin-left: 60px; width: 250px;height: 30px;"/>
+                <p id="maths_warning" style="display: none;color: red;font-size: 10px; margin-left: 70px;">Marks must be less than 100 and greater than 0.</p>
+            </div>
+            <div class="form-group">
+                <h3 style="margin-left: 60px; color:darkcyan;">Marks in Physics :</h3>
+                <input type="number" id="phy_marks" placeholder="Physics Marks" style="margin-left: 60px; width: 250px;height: 30px;" >
+                <p id="phy_warning" style="display: none;color: red;font-size: 10px;margin-left: 70px;">Marks must be less than 100 and greater than 0.</p>
+            </div>
+            <div class="form-group">
+                <h3 style="margin-left: 60px;color: darkcyan;">Marks in Chemistry :</h3>
+                <input type="number" id="chem_marks" placeholder="Chemistry Marks" style="margin-left: 60px; width: 250px;height: 30px;" >
+                <p id="chem_warning" style="display: none;color: red;font-size: 10px;margin-left: 70px;">Marks must be less than 100 and greater than 0. </p>
+            </div>  
+            <div>
+                <input type="button" id="submit_btn" value="Submit" style="margin-left: 160px;margin-top: 25px;color: darkcyan;padding: 10px;width: 90px;">
+                <p id="percentageshow"></p>
+            </div>
+        </form> 
+    </div>
+
+    <script>
+        let btn = document.getElementById("submit_btn");
+
+        btn.addEventListener("click", calculatePercentage);
+
+        function calculatePercentage() {
+            let mathsMarkElement = document.getElementById("maths_marks");
+            let mathsMarks = parseFloat(mathsMarkElement.value);
+            
+            let phyMarkElement = document.getElementById("phy_marks");
+            let phyMarks = parseFloat(phyMarkElement.value);
+
+            let chemMarkElement = document.getElementById("chem_marks");
+            let chemMarks = parseFloat(chemMarkElement.value);
+
+            let mathsWarning = document.getElementById("maths_warning");
+            let phyWarning = document.getElementById("phy_warning");
+            let chemWarning = document.getElementById("chem_warning");
+            let percentageshow = document.getElementById("percentageshow");
+
+            let message = "Marks cannot be negative or greater than 100";
+
+            // Check if any of the fields are empty or contain invalid values
+            if (isNaN(mathsMarks) || isNaN(phyMarks) || isNaN(chemMarks) || mathsMarks < 0 || mathsMarks > 100 || phyMarks < 0 || phyMarks > 100 || chemMarks < 0 || chemMarks > 100) {
+                mathsWarning.innerText = message;
+                phyWarning.innerText = message;
+                chemWarning.innerText = message;
+                mathsWarning.style.display = "block";
+                phyWarning.style.display = "block";
+                chemWarning.style.display = "block";
+                percentageshow.style.display = "none";
+            } else {
+                mathsWarning.style.display = "none";
+                phyWarning.style.display = "none";
+                chemWarning.style.display = "none";
+                let percentage = ((mathsMarks + phyMarks + chemMarks) / 300) * 100;
+                percentageshow.innerText = "Percentage is: " + percentage + "%";
+                percentageshow.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html> -->
+
+
+

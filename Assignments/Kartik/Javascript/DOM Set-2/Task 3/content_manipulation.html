@@ -1,0 +1,43 @@
+ <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Content Manipulation</title>
+    </head>
+    <body>
+        <h1 id="firstname">Hello</h1>
+        <div id="lastname">MASAI</div>
+        <p id="fullname">School</p>
+        <hr/>
+        <button onclick="setFirstName()">FIRSTNAME</button>
+        <button onclick="setLastName()">LASTNAME</button>
+        <button onclick="setFullName()">FIRSTNAME NAME</button>
+        <button onclick="resetDefaults()">RESET DEFAULTS</button>
+    </body>
+    <script type="text/javascript">
+        function setFirstName() {
+            // Change the content of h1 to your first name
+          document.getElementById("firstname").innerHTML ="Your First Name";
+        }
+
+        function setLastName() {
+            // Change the content of div to your last name
+            document.getElementById("lastname").innerHTML = "Your Last Name";
+        }
+
+        function setFullName() {
+            // Change the content of p to your full name (firstname - lastname)
+            var firstname = "Your First Name";
+            var lastname = "Your Last Name";
+            document.getElementById("fullname").innerHTML = (firstname +" - "+ lastname);
+        }
+
+        function resetDefaults(){
+            // reset the firstname, lastname, and fullname to empty values
+            document.getElementById("firstname").innerHTML = "Hello" ;
+            document.getElementById("lastname").innerHTML = "MASAI" ;
+            document.getElementById("fullname").innerHTML = "School" ;
+        }
+    </script>
+    </html>
+
+    <!-- Complete all the functions by creating a copy of the above template with the file name content_manipulation.html -->

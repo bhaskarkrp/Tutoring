@@ -1,0 +1,39 @@
+
+<!-- 10. Write a JavaScript program to calculate sphere volume. -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Calculate Sphere Volume</title>
+</head>
+<body>
+    <div style="border: 2px solid black;height: 300px;width: 500px;background-color: lightcoral;margin-left: 650px;">
+        <h2 style="text-align: center;color: crimson;">Calculate Sphere Volume</h2>
+        <form id="sphereForm">
+        <h5 style="text-align: center;">Enter the value of radius :</h5>
+        <input type="number" id="radius" style="margin-left: 165px;height: 30px;width: 180px;border-radius: 6px;">
+        <br><br>
+        <input type="button" onclick="calculateVolume()" value="Calculate" style="margin-left: 215px;height: 40px;width: 100px;">
+        </form>
+
+        <div id="output"></div>
+    </div>
+    <script>
+        function calculateVolume() {
+            var radius = parseFloat(document.getElementById("radius").value);
+            if (radius=="") {
+                alert("Please enter a valid number for the radius.");
+                return;
+            }
+            var volume = (4 / 3) * 3.14 * radius *radius *radius;
+ 
+          let Element = document.getElementById("output")
+          Element.innerHTML = "Volume of the sphere is : " + volume;
+          Element.style.marginTop="30px";
+          Element.style.marginLeft="140px"
+        }
+    </script>
+</body>
+</html>
