@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 5px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+</style>
+<body>
+    <div id="container"></div>
+    <script>
+        var btnArr = [
+    { name: "Primary", color: "white", bgColor: "blue" },
+    { name: "Secondary", color: "white", bgColor: "grey" },
+    { name: "Danger", color: "white", bgColor: "red" },
+    { name: "Warning", color: "black", bgColor: "yellow" },
+    { name: "Info", color: "white", bgColor: "cyan" },
+    { name: "Light", color: "black", bgColor: "white" },
+    { name: "Success", color: "white", bgColor: "green" },
+    { name: "Dark", color: "white", bgColor: "black" },
+    { name: "Link", color: "blue", bgColor: "white" },
+    { name: "Dark Pink", color: "blue", bgColor: "pink" },
+  ];
+    let buttonContainer = document.getElementById("container");
+    
+    for(let i = 0;i < btnArr.length; i++){
+        let databtn = btnArr[i];
+        let buttonNew = document.createElement("button");
+        buttonNew.textContent = databtn.name;
+        buttonNew.className='btn';
+        buttonNew.style.color=databtn.color;
+        buttonNew.style.backgroundColor= databtn.bgColor;
+
+        buttonContainer.appendChild(buttonNew);
+    }
+    </script>
+</body>
+</html>
