@@ -1,0 +1,41 @@
+MOVIE SEARCH WEBSITE
+
+1. Go to omdbapi.com , create account and explore API documentation.
+Create a decent UI where should be able to search for any movie they want. explore how can you make a search request.
+Make a fetch request and get the data depending on whatever movie you entered. Show the movie data on the app.
+
+2. This is an extension of the above problem.
+If there is no valid movie of searched name, show an error on the webpage. we would prefer if you could use images or gifs to show the error.
+If a movie is found, show the movie poster, release date, title, ratings and all the important info.
+Refer to Hotstar, Netflix, or any other streaming website for design ideas. You are free to create your own design.
+
+3. This is an extension of the above problem
+If the IMDb rating of a searched movie is >8.5, show a recommended tag in front of it.
+Implement sorting based on year.
+Implement filtering based on year (like show movie only after year 2021)
+
+
+
+WEATHER WEBSITE
+
+Accept a city name and find the weather data for that city
+
+Show the map of that entered city on right hand side
+
+Show the weather details of that city on Left hand side. Show min temp, max temp, wind, clounds, sunrise, sunset etc.
+
+Use logos or icons while showing the data. ( you can show logo of sunrise, sunset etc ) Searchbar should be on top.
+
+For Weather data use - https://openweathermap.org/api (Links to an external site.)
+
+For Maps - https://developers.google.com/maps/documentation/embed/get-started (Links to an external site.) OR :- Use this:- https://www.embedgooglemap.net/
+
+For Creating Google Maps API Key - https://developers.google.com/maps/documentation/embed/get-api-key
+
+Design Image provided: https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-08-04/Screenshot%202022-08-04%20at%204.38.03%20PM_401112.png
+
+In the same weather app, show daily forecast of a city for next 5 days.
+
+You can show this data on new html page or same one as well, your choice.
+
+You can take reference of below image. - https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-03-10/111_508575.png
